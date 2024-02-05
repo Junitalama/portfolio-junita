@@ -30,7 +30,7 @@ const Projects = () => {
             <p className="text-gray-900 text-sm mt-2">
               This app helps voluteers to book a session, cancel a session and
               register themselves as a volunteer. volunteers can also see
-              available sessions. Manger can see all the bookings list and
+              available sessions. Manager can see all the bookings list and
               volunteers datails.
             </p>
             <p className="text-gray-900 text-sm mt-2">
@@ -133,7 +133,7 @@ const Projects = () => {
             <h3 class="text-xl font-bold text-gray-900 mt-4">Hotel App</h3>
             <p className="text-gray-900 text-sm mt-2">
               This Hotel Booking App allows users to see the informations about
-              the popular tourist destinations. it shows booking list and search
+              the popular tourist destinations. it shows booking list and search the
               customers by filtering.
             </p>
             <p className="text-gray-900 text-sm mt-2">
