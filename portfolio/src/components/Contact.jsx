@@ -13,6 +13,7 @@ const Contact = () => {
           </p>
           <p className="text-blue-900 py-4">Send me a message</p>
         </div>
+        <form action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812" method="POST">
         <input
           className="bg-[#f8f9fc] p-1"
           type="text"
@@ -34,6 +35,7 @@ const Contact = () => {
         <button className="text-blue-900 bg-orange-600 100 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
           SEND
         </button>
+        </form>
       </div>
     </div>
   );
