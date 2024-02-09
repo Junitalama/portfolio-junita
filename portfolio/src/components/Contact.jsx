@@ -40,6 +40,7 @@ const Contact = () => {
             placeholder="Name"
             name="name"
           />
+          {""}
           <input
             className="my-3 p-1 bg-[#f8f9fc]"
             type="email"
