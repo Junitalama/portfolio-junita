@@ -22,6 +22,7 @@ const Contact = () => {
       name="contact"
       className="w-full md:h-screen bg-[#0a192f] flex justify-center items-center p-4 pt-16"
     >
+      <div>
       <form
         onSubmit={handleSubmit}
         method="POST"
@@ -58,6 +59,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
+      </div>
 
       {isFormSubmitted && (
         <p className="text-green-600 font-bold text-center">
