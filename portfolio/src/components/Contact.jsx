@@ -20,44 +20,45 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#d8e9f3] flex justify-center items-center p-4"
+      className="w-full md:h-screen bg-[#0a192f] flex justify-center items-center p-4 pt-16"
     >
-      <div className="flex flex-col max-w-[500px] w-full">
-        <div className="pb-8 flex flex-col justify-center w-full h-full items-center">
-          <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-blue-900">
+      <form
+        onSubmit={handleSubmit}
+        method="POST"
+        action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
+        className="flex flex-col max-w-[600px] w-full"
+      >
+        <div className="pb-4">
+          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
-          <p className="text-blue-900 py-4">Send me a message</p>
+          <p className="text-sky-100 text-[25px] py-4">
+            Please fill up this form to contact you
+          </p>
         </div>
-        <form
-          onSubmit={handleSubmit}
-          action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
-          method="POST"
-        >
-          <input
-            className="bg-[#f8f9fc] p-1"
-            type="text"
-            placeholder="Name"
-            name="name"
-          ></input>
-          {""}
-          <input
-            className="my-3 p-1 bg-[#f8f9fc]"
-            type="email"
-            placeholder="Email"
-            name="email"
-          ></input>
-          <textarea
-            className="bg-[#f8f9fc] p-2"
-            name="message"
-            rows="5"
-            placeholder="Message"
-          ></textarea>
-          <button className="text-blue-900 bg-orange-600 100 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
-            SEND
-          </button>
-        </form>
-      </div>
+        <input
+          className="bg-[#ccd6f6] p-2"
+          type="text"
+          placeholder="Name"
+          name="name"
+        />
+        <input
+          className="my-4 p-2 bg-[#ccd6f6]"
+          type="email"
+          placeholder="Email"
+          name="email"
+        />
+        <textarea
+          className="bg-[#ccd6f6] p-2"
+          name="message"
+          rows="7"
+          placeholder="Message"
+        ></textarea>
+        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 font-bold px-4 py-3 my-8 mx-auto flex items-center">
+          Submit
+        </button>
+      </form>
+
       {isFormSubmitted && (
         <p className="text-green-600 font-bold text-center">
           Message submitted successfully!
