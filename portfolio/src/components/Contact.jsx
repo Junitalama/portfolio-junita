@@ -1,69 +1,62 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Contact = () => {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-
       setIsFormSubmitted(true);
     } catch (error) {
       console.error("Error submitting form:", error);
-
     }
   };
-
   return (
     <div
       name="contact"
-      className="w-full md:h-screen bg-[#d8e9f3] flex justify-center items-center p-4 pt-16"
+      className="w-full h-screen bg-[#d8e9f3] flex justify-center items-center p-4"
     >
-      <div>
+      <div className="flex flex-col max-w-[500px] w-full">
+        <div className="pb-8 flex flex-col justify-center w-full h-full items-center">
+          <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-blue-900">
+            Contact
+          </p>
+          <p className="text-blue-900 py-4">Send me a message</p>
+        </div>
         <form
-          onSubmit={handleSubmit}
-          method="POST"
           action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
-          className="flex flex-col max-w-[600px] w-full"
+          method="POST"
+          onSubmit={handleSubmit
+          }
         >
-          <div className="pb-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-              Contact
-            </p>
-            <p className="text-sky-100 text-[25px] py-4">Send a Message</p>
-          </div>
           <input
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#f8f9fc] p-1"
             type="text"
             placeholder="Name"
             name="name"
           />
           <input
-            className="my-4 p-2 bg-[#ccd6f6]"
+            className="my-3 p-1 bg-[#f8f9fc]"
             type="email"
             placeholder="Email"
             name="email"
           />
           <textarea
-            className="bg-[#ccd6f6] p-2"
+            className="bg-[#f8f9fc] p-2"
             name="message"
-            rows="7"
+            rows="5"
             placeholder="Message"
           ></textarea>
-          <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 font-bold px-4 py-3 my-8 mx-auto flex items-center">
-            Submit
+          <button className="text-blue-900 bg-orange-600 100 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
+            SEND
           </button>
         </form>
+        {isFormSubmitted && (
+          <p className="text-green-600 font-bold text-center">
+            Message submitted successfully!
+          </p>
+        )}
       </div>
-
-      {isFormSubmitted && (
-        <p className="text-green-600 font-bold text-center">
-          Message submitted successfully!
-        </p>
-      )}
     </div>
   );
 };
-
 export default Contact;
