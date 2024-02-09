@@ -18,8 +18,8 @@ const Contact = () => {
         <form
           action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
           method="POST"
-          onSubmit={handleSubmit
-          }
+          
+          
         >
           <input
             className="bg-[#f8f9fc] p-1"
