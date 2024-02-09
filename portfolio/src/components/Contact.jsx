@@ -26,18 +26,22 @@ const Contact = () => {
           action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
           method="POST"
         >
-          
-          <input
-            className="bg-[#f8f9fc] p-1"
-            type="text"
-            placeholder="Name"
-            name="name"></input>
+          <div>
+            <input
+              className="bg-[#f8f9fc] p-1"
+              type="text"
+              placeholder="Name"
+              name="name"
+            ></input>
+          </div>
+          <div>
           <input
             className="bg-[#f8f9fc] p-2"
             type="email"
             placeholder="Email"
             name="email"
           ></input>
+          </div>
           <textarea
             className="bg-[#f8f9fc] p-3"
             name="message"
