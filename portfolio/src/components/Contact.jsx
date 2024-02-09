@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
         <div>
           <input
-            className="bg-[#ccd6f6] p-2 mb-4"
+            className="bg-[#f8f9fc] p-1"
             type="text"
             placeholder="Name"
             name="name"
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
         <div>
           <input
-            className="bg-[#ccd6f6] p-2 mb-4"
+            className="my-3 p-1 bg-[#f8f9fc]"
             type="email"
             placeholder="Email"
             name="email"
