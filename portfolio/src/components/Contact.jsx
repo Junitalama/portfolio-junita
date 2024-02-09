@@ -29,20 +29,23 @@ const Contact = () => {
             Please fill up this form to contact you
           </p>
         </div>
-        <input
-          className="bg-[#ccd6f6] p-2 mb-4"
-          type="text"
-          placeholder="Name"
-          name="name"
-        />
-        <br>
+        <div>
+          <input
+            className="bg-[#ccd6f6] p-2 mb-4"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+        </div>
+        <div>
           <input
             className="bg-[#ccd6f6] p-2 mb-4"
             type="email"
             placeholder="Email"
             name="email"
           />
-        </br>
+        </div>
+
         <textarea
           className="bg-[#ccd6f6] p-2"
           name="message"
