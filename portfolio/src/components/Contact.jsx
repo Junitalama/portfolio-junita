@@ -1,15 +1,8 @@
 import React from "react";
 
 const Contact = () => {
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      setIsFormSubmitted(true);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
+  
+ 
   return (
     <div
       name="contact"
@@ -50,11 +43,8 @@ const Contact = () => {
             SEND
           </button>
         </form>
-        {isFormSubmitted && (
-          <p className="text-green-600 font-bold text-center">
-            Message submitted successfully!
-          </p>
-        )}
+        
+        
       </div>
     </div>
   );
