@@ -39,14 +39,14 @@ const Contact = () => {
             type="text"
             placeholder="Name"
             name="name"
-          />
+          ></input>
           {""}
           <input
             className="my-3 p-1 bg-[#f8f9fc]"
             type="email"
             placeholder="Email"
             name="email"
-          />
+          ></input>
           <textarea
             className="bg-[#f8f9fc] p-2"
             name="message"
