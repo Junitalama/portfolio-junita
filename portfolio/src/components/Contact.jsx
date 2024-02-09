@@ -1,6 +1,15 @@
 import React from "react";
 
 const Contact = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      setIsFormSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
   return (
     <div
       name="contact"
@@ -13,29 +22,37 @@ const Contact = () => {
           </p>
           <p className="text-blue-900 py-4">Send me a message</p>
         </div>
-        <form action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812" method="POST">
-        <input
-          className="bg-[#f8f9fc] p-1"
-          type="text"
-          placeholder="Name"
-          name="name"
-        />
-        <input
-          className="my-3 p-1 bg-[#f8f9fc]"
-          type="email"
-          placeholder="Email"
-          name="email"
-        />
-        <textarea
-          className="bg-[#f8f9fc] p-2"
-          name="message"
-          rows="5"
-          placeholder="Message"
-        ></textarea>
-        <button className="text-blue-900 bg-orange-600 100 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
-          SEND
-        </button>
+        <form
+          action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
+          method="POST"
+        >
+          <input
+            className="bg-[#f8f9fc] p-1"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            className="my-3 p-1 bg-[#f8f9fc]"
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+          <textarea
+            className="bg-[#f8f9fc] p-2"
+            name="message"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+          <button className="text-blue-900 bg-orange-600 100 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
+            SEND
+          </button>
         </form>
+        {isFormSubmitted && (
+          <p className="text-green-600 font-bold text-center">
+            Message submitted successfully!
+          </p>
+        )}
       </div>
     </div>
   );
