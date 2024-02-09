@@ -1,8 +1,6 @@
 import React from "react";
 
 const Contact = () => {
-  
- 
   return (
     <div
       name="contact"
@@ -15,11 +13,10 @@ const Contact = () => {
           </p>
           <p className="text-blue-900 py-4">Send me a message</p>
         </div>
+        <div>
         <form
           action="https://getform.io/f/939f7ecf-2a91-4a0b-8b59-aa55ec3e2812"
           method="POST"
-          
-          
         >
           <input
             className="bg-[#f8f9fc] p-1"
@@ -28,7 +25,7 @@ const Contact = () => {
             name="name"
           />
           <input
-            className="my-3 p-1 bg-[#f8f9fc]"
+            className="my-3 p-2 bg-[#f8f9fc]"
             type="email"
             placeholder="Email"
             name="email"
@@ -43,8 +40,7 @@ const Contact = () => {
             SEND
           </button>
         </form>
-        
-        
+        </div>
       </div>
     </div>
   );
