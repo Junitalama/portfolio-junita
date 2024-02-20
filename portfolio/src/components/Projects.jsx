@@ -7,7 +7,7 @@ import cityfarm from "../assets/city-farm.png"
 
 const Projects = () => {
   return (
-    <div name="projects" className="bg-[#d8e9f3] py-10 ">
+    <div name="projects" className="bg-[#d8e9f3] py-10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-blue-900 mb-4 text-center">
           Projects
@@ -40,7 +40,7 @@ const Projects = () => {
             </p>
             <div className="flex items-center justify-between mt-4">
               <button class="bg-gray-900 text-white py-1 px-4 rounded-full font-bold  hover:bg-gray-800 ">
-                <a href="http://city-farm.s3-website.eu-west-2.amazonaws.com/">
+                <a href="http://farmcity.s3-website.eu-west-2.amazonaws.com/">
                   Live
                 </a>
               </button>
@@ -133,8 +133,8 @@ const Projects = () => {
             <h3 class="text-xl font-bold text-gray-900 mt-4">Hotel App</h3>
             <p className="text-gray-900 text-sm mt-2">
               This Hotel Booking App allows users to see the informations about
-              the popular tourist destinations. it shows booking list and search the
-              customers by filtering.
+              the popular tourist destinations. it shows booking list and search
+              the customers by filtering.
             </p>
             <p className="text-gray-900 text-sm mt-2">
               <strong>Technologies:</strong>React, JavaScript, bootstrap, fetch
